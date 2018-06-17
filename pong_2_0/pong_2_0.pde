@@ -26,12 +26,12 @@ void draw() {
   x += speedX;
   y += speedY;
 
-  // if ball hits movable bar, invert X direction
+  
   if ( x > width-30 && x < width -20 && y > mouseY-rectSize/2 && y < mouseY+rectSize/2 ) {
     speedX = speedX * -1;
   } 
 
-  // if ball hits wall, change direction of X
+ 
   if (x < 25) {
     speedX *= -1.1;
     speedY *= 1.1;
@@ -39,7 +39,7 @@ void draw() {
   }
 
 
-  // if ball hits up or down, change direction of Y   
+     
   if ( y > height || y < 0 ) {
     speedY *= -1;
   }
