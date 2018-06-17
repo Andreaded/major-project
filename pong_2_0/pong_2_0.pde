@@ -47,4 +47,10 @@ void draw() {
 
 void mousePressed() {
   reset();
+
+textSize(10);
+text("by Andres",100,30);
+fill(0, 102, 153);
+
+
 }
